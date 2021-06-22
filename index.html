@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>String Analyse</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <div class="initial2way" id="initial2way">
+        <h1>Escolha uma opção para analisar os textos</h1>
+        <div class="select2way">
+            <button id="compare-button">Comparar textos</button>
+            <button id="size-button">Encontrar tamanho</button>
+        </div>
+    </div>
+    <div class="compare" id="compare">
+        <button class="close">X</button>
+        <h1 id="compare-result">Textos iguais</h1>
+        <div class="text-input-area">
+            <label>
+                <textarea id="text-comp-1" rows="10" cols="66"></textarea>
+            </label>
+            <label>
+                <textarea id="text-comp-2" rows="10" cols="66"></textarea>
+            </label>
+        </div>
+        <div class="options">
+            <label>
+                <input type="checkbox" id="case-sensitive">
+                <span>Case sensitive</span>
+            </label>
+        </div>
+    </div>
+    <div class="length-check" id="length-check">
+        <button class="close">X</button>
+        <h1 id="length-check-length">0</h1>
+        <div class="text-input-area">
+            <label>
+                <textarea id="text-length" rows="10" cols="66"></textarea>
+            </label>
+        </div>
+        <div class="options">
+            <div>
+                <label>
+                    <input type="checkbox" id="opt-capitalize">
+                    <span>Capitalizar texto</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="opt-uppercase">
+                    <span>Apenas letras maiúsculas</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="opt-lowercase">
+                    <span>Apenas letras minúsculas</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Limite da caracteres</span>
+                    <input type="number" id="opt-maxlength" min="0">
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
